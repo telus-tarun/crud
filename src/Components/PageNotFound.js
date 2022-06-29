@@ -7,7 +7,7 @@ export default function PageNotFound() {
             <h2>404</h2>
             <h3>Oops, nothing here...</h3>
             <p>Please Check the URL</p>
-            <p>Otherwise, <Link to="/">Click here</Link> to redirect to homepage.</p>
+            <p>Otherwise, <Link to="/crud">Click here</Link> to redirect to homepage.</p>
         </div>
     </>
   )

@@ -55,7 +55,7 @@ export default class AddOrder extends Component {
                 'Content-Type': 'application/json;charset=UTF-8'
             }, 
           body: JSON.stringify(data)
-        },this.setState({redirect:"/"})
+        },this.setState({redirect:"/crud"})
         )
       }
       render(){
@@ -85,7 +85,7 @@ export default class AddOrder extends Component {
                     </div>
                     <div className="d-grid gap-2 d-md-block">
                         <button  onClick={this.placeOrder} className="btn btn-primary" type="submit" style={{margin:"2px"}}>Order</button>
-                        <Link to="/" className="btn btn-danger ml-2">Cancel</Link>
+                        <Link to="/crud" className="btn btn-danger ml-2">Cancel</Link>
                     </div>
                 </div>
             </form>
