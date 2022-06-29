@@ -73,7 +73,7 @@ export default function UpdateOrder(){
               body: JSON.stringify(data)
             }
             );
-            navigate("/crud");
+            navigate("/");
             console.log("success!!");
             toast.dismiss();
             toast.success("Order Updated successfully!!")
@@ -111,7 +111,7 @@ export default function UpdateOrder(){
                     </div>
                     <div className="d-grid gap-2 d-md-block">
                         <button className="btn btn-primary" type="submit" onClick={placeOrder} style={{marginRight:"5px"}}>Submit</button>
-                        <Link to="/crud" className="btn btn-danger">Cancel</Link>
+                        <Link to="/" className="btn btn-danger">Cancel</Link>
                     </div>
                 </div>
             </form>

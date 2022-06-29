@@ -9,13 +9,14 @@ import {
   BrowserRouter,
   Routes,
   Route,
+  HashRouter,
 } from "react-router-dom";
 
 
 function App() {
   return (
     <>
-    <BrowserRouter>
+    <HashRouter>
       <Navbar/>
         <Routes>
           <Route path="/" element={<Main/>} />
@@ -23,7 +24,7 @@ function App() {
           <Route path="/edit/:id" element={<UpdateOrder/>} />
           <Route path="*" element={<PageNotFound/>} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
