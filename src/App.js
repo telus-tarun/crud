@@ -18,7 +18,7 @@ function App() {
     <BrowserRouter>
       <Navbar/>
         <Routes>
-          <Route path="/crud" element={<Main/>} />
+          <Route path="/" element={<Main/>} />
           <Route path="/add" element={<AddOrder/>} />
           <Route path="/edit/:id" element={<UpdateOrder/>} />
           <Route path="*" element={<PageNotFound/>} />
